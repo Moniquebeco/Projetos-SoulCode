@@ -1,0 +1,230 @@
+/* para zerar espaçamento de margim e padding dos browzers */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradiente de fundo do site */
+body{
+    background-color: rgb(226, 245, 241) 
+}
+
+/* base do site */
+#site{
+    color: rgb(77, 72, 10);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* cabeçalho */
+header{
+    grid-column: 1/-1;
+    background-image:linear-gradient(rgb(8, 221, 186), rgb(8, 173, 165), rgb(3, 110, 110));
+    box-shadow: 3px 3px 7px rgb(48, 47, 47);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+header img{
+    padding: 15px 0px 0px 60px;
+    width: 10%;
+}
+
+/* menu */
+#menu{
+    display: flex;
+    float: left;
+    color: white;
+    list-style: none;
+}
+#menu li{
+    padding-left: 60px;
+}
+#menu li a{
+    color: white;
+    text-decoration: none;
+}
+#menu li a:hover{
+    color: rgb(182, 226, 240);
+}
+
+/* campo pesquisa */
+#pesquisa input{
+    float:right;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 7px;
+}
+#pesquisa button{
+    float: right;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 1rem;
+}
+
+/* banner exigido - Objetivo*/
+#objetivo{
+    background-color: rgb(242, 245, 202);
+    background-image: url(img/luneta1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/-1;
+    height: 500px;
+    padding-top: 40px;
+    text-align: center;
+}
+#objetivo p{
+    font-size: 25px;
+    color: rgb(77, 72, 10);
+}
+
+/* Titilo da pagina */
+h1{
+    color: #F8C100;
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* section com uma coluna - SoulCode*/
+#soulCode{
+    grid-column: 2/6;
+    height: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#soulCode h3{
+    font-size: 40px;
+    padding: 30px 0px 20px 0px;
+}
+#soulCode p{
+    color: rgb(77, 72, 10);
+}
+
+/* section com tres colunas - Imagem dos cursos*/
+#imagens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    grid-column: 1/-1;
+    /* justify-content: ; */
+}
+#img1{
+    clip-path: circle(100px at 150px 100px);
+    grid-column: 1/2;
+    margin-left: 70px;
+    width: 70%;
+}
+#img2{
+    clip-path: circle(100px at 150px 100px);
+    grid-column: 2/3;
+    margin-left: 70px;
+    width: 70%;
+}
+#img3{
+    clip-path: circle(100px at 150px 100px) ;
+    grid-column: 3/4;
+    margin-left: 70px;
+    width: 80%;
+}
+
+/* section complementar com tres colunas - Imagem dos cursos*/
+#sobre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
+    height: 150px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+#sobre1{
+    grid-column: 1/2;
+    padding: 20px 70px 10px 50px;
+   
+}
+#sobre2{
+    grid-column: 2/3;
+    padding: 20px 50px 10px 50px;
+}
+#sobre3{
+    grid-column: 3/4;
+    padding: 20px 70px 50px 50px;
+}
+
+/* Section com duas coluans - Curso*/
+#curso{
+    background-color: rgb(252, 251, 218);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+    grid-column: 1/-1;
+}
+#cursoImg{
+    grid-column: 1/2;
+    padding-left: 50px;
+}
+#cursoText{
+    grid-column: 2/3;
+    padding: 20px 70px 20px 50px;
+}
+#cursoText h4{
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#curso p{
+    text-align: center;
+}
+#imgDev{
+    box-shadow: 3px 3px 7px black;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+/* rodapé */
+footer{
+    background-color: rgb(2, 41, 42);
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    grid-column: 1/-1;
+}
+#preLogo{
+    padding-left: 50px;
+}
+footer ul{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+footer a{
+    color: wheat;
+    font-size: 16px;
+    text-decoration: none;
+}
+#redes{
+    padding-left: 70px;
+}
+.imgRedes{
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 5px;
+    padding-top: 20px;
+    width: 50px;
+}
+
+/* WhatsApp */
+#zap{
+    border-radius: 100px;
+    left: 79rem;
+    top: 26rem;
+    position: fixed;
+    width: 80px;
+}

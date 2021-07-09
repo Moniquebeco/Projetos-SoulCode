@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="calculadora.css">
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <img src="img/bagagem-de-viagem.png" alt="" id="meuLogo">
+        <span id="nomeAgencia">Soulmundo Turismo</span>
+        <div class="menu">
+            <ul>
+                <li><a href="../landing_page/index.html" target=""> Landing Page</a></li>
+                <li><a href="../calculadora/calculadora.html" target=""> Calculadora</a></li>
+                <li><a href="../cadastro/cadastro.html" target="">Cadastro</a></li>
+                <li><a href="../currency/conversorMoedas.html" target="">Currency</a></li>
+       
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Grid- Nossa Calculadora -->
+    <div id="container">
+        <h1 style="text-align: center;">Calculadora Simples</h1>
+        <h1 style="text-align: center;">Calculadora Científica</h1>
+        <div><input type="button" value="Usar essa!" onclick="usar_simples(), limparTela()" class="botao"></div>
+        <div><input type="button" value="Usar essa!" onclick="usar_cientifica(), limparTela2()" class="botao"></div>
+
+        <div id="container_simples">
+            <div id="total_simples"> <input class="btn_s" type="text" id="result_simples" placeholder="0"></div>
+    
+            <div><input class="btn btn_s" type="button" value="&#8592; " onclick="apagar()"></div>
+            <div id="limpar_simples"><input class="btn_s" id="CE_simples" type="button" value="CE" onclick="limparTela()"></div>
+            <div><input class="btn btn_s" type="button" value="&#247;" onclick="concatena('/')"></div>
+            <div><input class="btn btn_s" type="button" value="7" onclick="concatena('7')"></div>
+            <div><input class="btn btn_s" type="button" value="8" onclick="concatena('8')"></div>
+            <div><input class="btn btn_s" type="button" value="9" onclick="concatena('9')"></div>
+            <div><input class="btn btn_s" type="button" value="&#215;" onclick="concatena('*')"></div>
+            <div><input class="btn btn_s" type="button" value="6" onclick="concatena('6')"></div>
+            <div><input class="btn btn_s" type="button" value="5" onclick="concatena('5')"></div>
+            <div><input class="btn btn_s" type="button" value="4" onclick="concatena('4')"></div>
+            <div><input class="btn btn_s" type="button" value="-" onclick="concatena('-')"></div>
+            <div><input class="btn btn_s" type="button" value="3" onclick="concatena('3')"></div>
+            <div><input class="btn btn_s" type="button" value="2" onclick="concatena('2')"></div>
+            <div><input class="btn btn_s" type="button" value="1" onclick="concatena('1')"></div>
+            <div><input class="btn btn_s" type="button" value="+" onclick="concatena('+')"></div>
+            <div><input class="btn btn_s" type="button" value="( )" onclick="par()"></div>
+            <div><input class="btn btn_s" type="button" value="0" onclick="concatena('0')"></div>
+            <div><input class="btn btn_s" type="button" value="," onclick="concatena('.')"></div>
+            <div><input class="btn btn_s" type="button" value="=" onclick="resolve()"></div>
+    
+        </div>
+    
+        <div id="container_cientifica">
+            <div id="total_cientifica"> <input type="text" class="btn_c" id="result" placeholder="0"></div>
+    
+            <div><input class="btn btn_c" type="button" value="&#8592; " onclick="apagar2()"></div>
+            <div id="limpar_cientifica"><input class="btn_c" id="CE_cientifica" type="button" value="CE" onclick="limparTela2()"></div>
+            <div><input class="btn btn_c" type="button" value="&#247;" onclick="concatena2('/')"></div>
+            <div><input class="btn btn_c" type="button" value="&#8730;" onclick="operacao('Math.sqrt(')"></div>
+            <div><input class="btn btn_c" type="button" value="x²" onclick="concatena2('**2')"></div>
+            <div><input class="btn btn_c" type="button" value="x³" onclick="concatena2('**3')"></div>
+            <div><input class="btn btn_c" type="button" value="&pi;" onclick="concatena2('3.141592653589793')"></div>
+            <div><input class="btn btn_c" type="button" value="7" onclick="concatena2('7')"></div>
+            <div><input class="btn btn_c" type="button" value="8" onclick="concatena2('8')"></div>
+            <div><input class="btn btn_c" type="button" value="9" onclick="concatena2('9')"></div>
+            <div><input class="btn btn_c" type="button" value="&#215;" onclick="concatena2('*')"></div>
+            <div><input class="btn btn_c" type="button" value="6" onclick="concatena2('6')"></div>
+            <div><input class="btn btn_c" type="button" value="5" onclick="concatena2('5')"></div>
+            <div><input class="btn btn_c" type="button" value="4" onclick="concatena2('4')"></div>
+            <div><input class="btn btn_c" type="button" value="-" onclick="concatena2('-')"></div>
+            <div><input class="btn btn_c" type="button" value="3" onclick="concatena2('3')"></div>
+            <div><input class="btn btn_c" type="button" value="2" onclick="concatena2('2')"></div>
+            <div><input class="btn btn_c" type="button" value="1" onclick="concatena2('1')"></div>
+            <div><input class="btn btn_c" type="button" value="+" onclick="concatena2('+')"></div>
+            <div><input class="btn btn_c" type="button" value="( )" onclick="par2()"></div>
+            <div><input class="btn btn_c" type="button" value="0" onclick="concatena2('0')"></div>
+            <div><input class="btn btn_c" type="button" value="," onclick="concatena2('.')"></div>
+            <div><input class="btn btn_c" id="igual" type="button" value="=" onclick="resolve2()"></div>
+    
+        </div>
+    </div>
+    </main>
+    
+
+    <footer id="rodape" style="font-size: 100%;">
+        <div class="footer principal">
+        </div>
+
+        <div class="redes">
+            <a href="" target="_blank"><img class="icone" src="img/twitter.jpg" alt="Ícone Twitter"></a>
+            <a href="" target="_blank"><img class="icone" src="img/face.png" alt="Ícone Facebook"></a>
+            <a href="" target="_blank"><img class="icone" src="img/insta.png" alt="Ícone Instagram"></a>
+            <a href="" target="_blank"><img class="icone" src="img/link.jpg" alt="Ícone LinkedIn"></a>
+
+        </div>
+
+        <div class="texto-footer">SOULMUNDO | © 2021 Todos os Direitos Reservados | Powered by</div>
+    </footer>
+
+    
+</body>
+</html>

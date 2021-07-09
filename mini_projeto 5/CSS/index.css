@@ -1,0 +1,241 @@
+body{
+    margin: 0 auto;
+    height: 800px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-image: linear-gradient(to left, black 40%,#057483 80%);
+}
+
+
+#esquerda{
+    border:solid black;
+    border-radius: 3px;
+}
+hr{
+    border:solid white;
+    border-radius: 3px;
+}
+main{
+    width: 59.9%;
+    max-height: 1000px;
+    height: 954px;
+    float: left;
+    background-color: #a8dadc;
+
+}
+
+aside{
+    width: 20%;
+    height: 20px;
+    background-color: #f5648885;
+}
+
+/* Links */
+a{
+    float: right;
+    margin: 8px;
+    text-decoration:none;
+    color: #d80035;
+    font-size: 23px;
+    font-weight: bolder;
+    margin:8px;
+}
+
+.a2{
+    color: white;
+    width: max-content;
+}
+
+a:hover{
+    color: white;
+    font-size: 24px;
+}
+/* fim Links */
+
+/* Paragrafos */
+.p_text{
+    min-height: 172px;
+height: 162px;
+margin: 8px 2px -10px 3px;
+}
+.p_titulo{
+    min-height: 40px;
+    height: max-content;
+    margin: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.p_aside{
+    position: relative;
+    top: 15px;
+    margin: 17px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#titulo{
+    position: relative;
+    top: 30px;
+    margin: 0;
+    width: 80%;
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 3px ;
+    font-size: 35px;
+    font-weight: 600;
+}
+/* Paragrafos */
+
+/* rodapé */
+
+.rodape{
+    clear:both;
+    width:100%;
+    height:max-content;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    border:none;
+    background-image: linear-gradient(to left, black 45%,#057483 80%);
+    margin-bottom:0;
+}
+#inicio{
+    width:100px;
+    height:100px;
+    color: white;
+    font-size:17px;
+    border: none;
+    margin-right: 70px;
+}
+
+#faleconosco{
+    width:100px;
+    height:100px;
+    color: white;
+    font-size:17px;
+    border: none;
+    margin-left: 70px;
+}
+
+.a2{
+text-decoration: none;
+font-size:16px;
+text-transform: uppercase;
+}
+.a2:hover{
+    font-size:18px;
+}
+/* rodape */
+
+
+/* asides */
+#aside_esquedo{
+    float: left;
+    height: 954px;
+    position: relative; 
+    background-color:#057483;
+
+}
+
+#aside_direito{
+    color: white;
+    float: right;
+    height: 954px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+/* fim asides */
+
+#sec1{
+    width:100%;
+    height: 210px;
+    border: inset 4px rgb(0, 49, 114);
+    border-left-color: #0890a1;
+    background-clip: padding-box;
+     /* background-image: linear-gradient(gray, white); */
+    overflow:hidden;
+}
+#banner{
+    width: 100%;
+    height: auto;
+    bottom:350px;
+}
+
+#sec2{
+    width:55%;
+    height: 400px;
+    float: left;
+}
+
+
+#sec3{
+    width:45%;
+    float: right;
+}
+article{
+    border: 1px solid;
+    overflow: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#divvazia{
+    height: 18px;
+}
+ul{
+    list-style: disc;
+}
+
+/* IMAGENS */
+
+#img1{
+    width: 9.7rem;
+    position: fixed;
+    bottom: 25px;
+    left: 55px;
+    z-index: 10;
+
+}
+#img2{
+    width: 9.3rem;
+    position: fixed;
+    bottom: 25px;
+    right: 55px;
+    z-index: 10;
+}
+
+.img_noticias{
+    width: 100px;
+    float: right;
+}
+
+.img_noticias:hover{
+    width: 170px;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+#img1_sec2{
+    margin-left: 10px;
+    width: 340px;
+    float: left;
+    border: 11px ridge rgba(255, 255, 0, 0.658);
+
+}
+
+#img2_sec2{
+    float: right;
+    width: 242px;
+    margin: 16px;
+    border: 10px ridge gray;
+}
+#img3_sec2{
+    margin-left: 10px;
+    width: 352px;
+    border: 10px ridge rgb(26, 0, 141);
+}
+
+/* fim IMAGENS */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Formulário</title>
+    <style>
+
+        header{
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100px;
+            border: none;
+            background-image: linear-gradient(to left, black 40%,#057483 80%);
+        }
+        
+        h1{
+            text-align: center;
+            letter-spacing: 0.0rem;
+            color: rgb(218, 19, 19);
+            font-size: 4.375rem;
+            font-family: Arial Narrow, sans-serif;
+            text-transform: uppercase;
+        }
+        body{
+            margin: 0;
+            background-image: linear-gradient(to top left, black 45%,#057483 80%);
+        }
+        #formulario {
+            margin: 0 auto;
+            width: 50%;
+            height: 51rem;
+            border: 0.125rem white solid;
+            background-color: rgb(231, 231, 231);
+            line-height: 1.56rem;
+            text-align: center;
+            font-family: swis721_btroman, sans-serif;
+        }
+
+        #enviar {
+            width: 35%;
+            position: relative;
+            top: 1.25rem;
+        }
+
+        .boxformulario {
+            width: 70%;
+            height: 3.125rem;
+        }
+
+        .preenchimento {
+            width: 70%;
+            height: 1.875rem;
+        }
+
+        .senha {
+            width: 40%;
+            height: 1.875rem;
+            margin-bottom: 20px;
+        }
+
+        #titulo{
+            position: relative;
+            top: 30px;
+            margin: 0;
+            width: 80%;
+            text-align: center;
+            color:white;
+            text-shadow: 1px 1px 3px ;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        a:hover{
+        color: white;
+        font-size: 24px;
+        }
+
+        a{
+        float: right;
+        margin: 8px;
+        text-decoration:none;
+        color: #d80035;
+        font-size: 23px;
+        font-weight: bolder;
+        margin:8px;
+        }
+
+        p{
+            font-weight: 600;
+            font-size: 21px;
+        }
+
+        textarea{
+            max-width: 430px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <a href="formulario.html">Contato</a>
+         <a href="#sec3">Notícias</a>
+         <a href="quemsomos.html">Quem somos</a>
+         <p id="titulo">Portal SoulCode + TNT</p>
+     </header>
+    <form id="formulario">
+        <div>
+            <h1>Contato</h1>
+
+            <label for="name">
+                <p>Nome completo:</p>
+            </label>
+            <input type="text" required="required" class="preenchimento">
+        </div>
+        <div>
+            <label for="email">
+                <p>E-mail:</p>
+            </label>
+            <input type="email" required="required" class="preenchimento">
+        </div>
+        <div>
+            <label for="contato">
+                <p>Telefone de contato:</p>
+            </label>
+            <input type="tel" required="required" class="preenchimento">
+        </div>
+        <div>
+            <label for="senha">
+                <p>Senha:</p>
+            </label>
+            <input type="text" maxlength="8" required="required" class="senha">
+        </div>
+        <div>
+
+        <div>
+            <p>Deixe sua mensagem:</p>
+            <textarea name="" id="" cols="38" rows="6"></textarea>
+        </div>
+        <div>
+            <button id="enviar">
+                <p>Finalizar cadastro</p>
+            </button>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Landing page</title>
+    <script>
+        i = 0
+        function acessivel() {
+            if (i == 0) {
+                document.getElementById("cabecalho").style.fontSize = "180%"; 
+                document.getElementById("site").style.fontSize = "250%";       
+                document.getElementById("rodape").style.fontSize = "150%";
+                i = 1;
+            } else if (i == 1) {
+                document.getElementById("cabecalho").style.fontSize = "120%"; 
+                document.getElementById("site").style.fontSize = "150%";
+                document.getElementById("rodape").style.fontSize = "100%";
+                i = 0;
+            }
+        }
+
+        function trocar() {
+            document.getElementsByTagName("body")[0].style.background = "black";
+            document.getElementById("site").style.fontStyle = "italic";
+            document.getElementById("cabecalho").style.fontStyle = "italic";         
+            document.getElementById("site").style.color = "white";
+         
+        }
+
+        function reset() {
+            document.getElementsByTagName("body")[0].style.background = "white";
+            document.getElementById("site").style.color = "black";
+            document.getElementById("site").style.fontStyle = "normal";
+            document.getElementById("cabecalho").style.fontStyle = "normal";
+        }
+    </script>
+</head>
+<body style="background: rgb(255, 255, 255);">
+    <div class="logo"></div>
+    <header id="cabecalho">
+        <input type="button" value="Acessibilidade" onclick="acessivel()">
+        <input type="button" value="Trocar estilo" onclick="trocar()">
+        <input type="button" value="reset" onclick="reset()">
+        <div class="menu">
+            <ul>
+                <li><a href="../landing_page/index.html" target=""> Landing Page</a></li>
+                <li><a href="../calculadora/calculadora.html" target=""> Calculadora</a></li>
+                <li><a href="../cadastro/cadastro.html" target="">Cadastro</a></li>
+                <li><a href="../currency/conversorMoedas.html" target="">Currency</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <main id="site">
+        <section class="section1col">
+            <div class="div1">
+                <h2>Quem somos:</h2>
+                <p>A agência de viagem Soulmundo Turismo está presente há 5 anos no mercado. Nosso principal
+                    diferencial
+                    consiste na prestação de consultoria aos clientes, auxiliando-os a identificar dentre diversas
+                    opções de
+                    destinos, roteiros, hotéis e passeios, quais os que melhor se adéquam ao seu perfil e às suas
+                    necessidades.</p>
+
+                <p> Entendemos que cada cliente é único e possui necessidades específicas. Por isso,
+                    prezamos por um
+                    atendimento personalizado de alta qualidade, obtido graças a uma equipe de consultores altamente
+                    capacitados e antenados com o que há de melhor no mercado de turismo. Desta forma, nossa agência de
+                    viagem é capaz de satisfazer aos mais altos padrões de exigência, seja para indicar um pacote pronto
+                    ou
+                    para elaborar um roteiro exclusivo sob medida.</p>
+            </div>
+        </section>
+        <p>
+        <h2>Conheça a equipe por trás desta empresa:</h2>
+        </p>
+        <section class="section2col">
+            <div class="div2">
+                <img id="img" src="sarah.jfif" alt="" />
+                <h3>Sarah</h3>
+                <p>Recursos Humanos
+                    Estudante de Engenharia Mecatrônica e desenvolvimento na Soul Code Academy, tem MBA em Gestão de Recursos Humanos e atua na área há quase 7 anos. É responsável pelo recrutamento, seleção e contratação de novos talentos para a SoulMundo Turismo. Busca atrair talentos alinhados aos propósitos e a cultura da empresa,  desenvolvendo equipes mais engajadas, motivadas e alcançando melhores resultados.</p>
+            </div>
+            <div class="div2">
+                <img id="img" src="monique.jpg" alt="" />
+                <h3>Monique</h3>
+                <p> Desenvolvedora full-stack
+                    Atualmente atuo na área de desenvolvimento web como full-stack na empresa SoulMundo Turismo.Para o futuro almejo seguir nessa área de tecnologia por algum tempo :).Também trabalhei por um 'curto' período de tempo como vendedora,mas por eu ser um tanto quanto tímida acabei por desistir,entre tanto um módulo(Comunicação) do curso Pro-profissão do Instituto Proa me ajudou muito nesse quesito,comunicação,auto-conhecimento entre outras.</p>
+            </div>
+        </section>
+        <section class="section3col">
+            <div class="div3">
+                <img id="img"  src="geisi.jfif" alt="" />
+                <h3>Geisiane</h3>
+                <p> Olá, o meu nome é Geisiane Ferreira. Programadora formada na turma 2 de webFull stack da soul code, Hoje atua na area de  Desenvolvimento Web na Soul Mundo Turismo.O meu objetivo é continuar a me aprofundar no mundo da programação aprendendo cada dia mais. </p>
+            </div>
+            <div class=" div3">
+                <img id="img"  src="dani.jfif" alt="" />
+                <h3>Daniela</h3>
+                <p> Analista de Dados
+                    Formada em Estatística
+                    Responsável pela área financeira e pela parte de análise de dados da SoulMundo Turismo. Atua na área há 5 anos utilizando métodos estatísticos para fazer análises e inferências que possibilitam o crescimento da empresa e uma melhor utilização e aplicabilidade de recursos.  </p>
+            </div>
+            <div class="div3">
+                <img id="img"  src="thamiris.jpg" alt="" />
+                <h3>Thamiris</h3>
+                <p> Marketing
+                    Empresária há 12 anos, especialista em alavancar de forma rápida micro e pequenas empresas. Formada em Marketing com especialização em Economia. Já atuou como consultora, palestrante e ativista social. 
+                    Hoje é a responsável por definir os planos estratégicos de Marketing e comunicação na Soulmundo. Além de desenvolver estratégias de distribuição e elaborar orçamentos, também acompanha a evolução do mercado e conduz projetos de lançamentos ou relançamentos de produtos e serviços;</p>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape" style="font-size: 100%;">
+        <div class="footer principal">
+<!--
+            <h3> Contatos </h3>
+            <div>
+                <p> Rua Bento Barbosa,378
+
+                </p>
+                <p> Brooklin - São Paulo / SP</p>
+            </div>
+            <div>
+                <p>(11) 5182-9254</p>
+            </div>
+            <strong>info@Soulmundo.br</strong>
+-->
+        </div>
+        <div class="redes">
+            <a href="" target="_blank"><img class="icone" src="twitter.jpg" alt="Ícone Twitter"></a>
+            <a href="" target="_blank"><img class="icone" src="face.png" alt="Ícone Facebook"></a>
+            <a href="" target="_blank"><img class="icone" src="insta.png" alt="Ícone Instagram"></a>
+            <a href="" target="_blank"><img class="icone" src="link.jpg" alt="Ícone LinkedIn"></a>
+        </div>
+        <div class="texto-footer">SOULMUNDO | © 2021 Todos os Direitos Reservados | Powered by</div>
+    </footer>
+</body>
+<!-- Thamiris produziu a pagina Landing Page
+    Geisiane produziu a pagina Pagina de cadastro
+    Sarah produziu a página do Currency
+    Daniela e Monique produziram juntas a página das calculadoras, e ao final ficaram auxiliando o grupo nas dificuldades apresentadas; 
+-->
+</html>

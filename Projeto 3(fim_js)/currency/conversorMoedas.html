@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <!-- adicionando o favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <!-- ligando páginas externas -->
+    <link rel="stylesheet" href="conversorMoedas.css">
+    <script src="conversorMoedas.js"></script>
+</head>
+<body>
+    <header id="cabecalho">
+        <img src="img/bagagem-de-viagem.png" alt="" id="meuLogo">
+        <span id="nomeAgencia">Soulmundo Turismo</span>
+        <div class="menu">
+            <ul>
+                <li><a href="../landing_page/index.html" target=""> Landing Page</a></li>
+                <li><a href="../calculadora/calculadora.html" target=""> Calculadora</a></li>
+                <li><a href="../cadastro/cadastro.html" target="">Cadastro</a></li>
+                <li><a href="../currency/conversorMoedas.html" target="">Currency</a></li>
+       
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- título -->
+        <h1>Conversor de Moedas</h1>
+        <!-- divisão para adicionar grid (contém a parte de interação do usuário) -->
+        <div id="conversor">
+            <div>
+                <!-- selecionar a moeda de origem -->
+                <label for="moedaLocal" id="labelminhaMoedaLocal">Moeda Local:</label>
+                <select name="moeda" id="moedaLocal" onclick="limpar()">
+                    <option value="Dólar americano">Dólar americano</option>
+                    <option value="Dólar canadense">Dólar canadense</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra esterlina">Libra esterlina</option>
+                    <option value="Peso argentino">Peso argentino</option>
+                    <option value="Real brasileiro">Real brasileiro</option>
+                </select>
+            </div>
+            <div>
+                <!-- alterna moedas quando clica -->
+                <img src="img/cartao-com-duas-setas-giratorias.png" alt="" onclick="troca()">
+                <!-- botão para calcular o resultado -->
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <div>
+                <!-- moeda do resultado final -->
+                <label for="moedaPretendida" id="labelminhaMoedaPretendida">Moeda Pretendida:</label>
+                <select name="moeda" id="moedaPretendida" onclick="limpar()">
+                    <option value="Dólar americano">Dólar americano</option>
+                    <option value="Dólar canadense">Dólar canadense</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra esterlina">Libra esterlina</option>
+                    <option value="Peso argentino">Peso argentino</option>
+                    <option value="Real brasileiro">Real brasileiro</option>
+                </select>
+            </div>
+            <div>
+                <!-- usuário irá digital o valor da moeda local -->
+                <label for="inputValor1" id="labelValor1">Montante:</label>
+                <input type="text" id="inputValor1" onclick="limpar()">
+            </div>
+            <div>
+                <!-- irá mostrar o resultado -->
+                <label for="inputValor2" id="labelValor2">Montante:</label>
+                <input type="text" id="inputValor2" disabled="">
+            </div>
+        </div>
+        <!-- divisão para acrescentar flexbox -->
+        <div id="infos">
+            <!-- bandeiras dos países -->
+            <div id = "bandeiras">
+                <div id="bandeira1"></div>
+                <div id="seta"></div>
+                <div id="bandeira2"></div>
+            </div>
+            <!-- informações sobre as moedas -->
+            <div id="infosMoeda">
+                <p id="conversao1">1 USD = 1,00 USD</p>
+                <p id="conversao2">1 USD = 1,00 USD</p>
+                <p id="data">* Última atualização: 27/04/2021 10:20 UTC-3</p>
+            </div>
+            <!-- JS acrescenta fotos de acordo com a moeda -->
+            <div id="grafico">
+
+            </div>
+        </div>
+    </main>
+    <footer id="rodape" style="font-size: 100%;">
+        <div class="footer principal">
+        </div>
+
+        <div class="redes">
+            <a href="" target="_blank"><img class="icone" src="img/twitter.jpg" alt="Ícone Twitter"></a>
+            <a href="" target="_blank"><img class="icone" src="img/face.png" alt="Ícone Facebook"></a>
+            <a href="" target="_blank"><img class="icone" src="img/insta.png" alt="Ícone Instagram"></a>
+            <a href="" target="_blank"><img class="icone" src="img/link.jpg" alt="Ícone LinkedIn"></a>
+
+        </div>
+
+        <div class="texto-footer">SOULMUNDO | © 2021 Todos os Direitos Reservados | Powered by</div>
+    </footer>
+
+</body>
+</html>

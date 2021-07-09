@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!----------- duas autoras ----------------------------->
+    <meta name="author" content="Talita Fernandes">
+    <meta name="author" content="Monique">
+    <title>Serviços</title>
+    <link rel="stylesheet" type="text/CSS" href="servicos.css">
+    <link rel="icon" href="img/pre-logo.png">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Amatic + SC: wght @ 400; 700 & display = swap "rel =" stylesheet ">
+
+</head>
+<body>
+<!----------- divisao contendo a grid pai--------------->
+    <div id="site">
+<!----------- logo, menu e pesquisa -------------------->
+        <header>
+            <div><img src="img/logo-dark.png" alt="Logomarca"></div>
+            <div>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem_somos.html">Sobre nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div id="pesquisa">
+                <button>Pesquisar</button>
+                <input type="search" placeholder="Digite sua dúvida aqui" size="40">    
+            </div>
+        </header>
+<!----------- div conteudo pai -------------------->
+        <div id="conteudo">
+<!----------- banner ------------------------------>
+           <section id="baseBanner">
+               <h1>Primeiros passos... <br>...em uma nova profissão</h1>
+               <img src="img/curso.jpg" alt="Curso" id="banner2">
+           </section>  
+<!----------- informações dos cursos -------------->
+           <section id="sobreCursos">
+                <h2>Nossos cursos</h2>
+                <h3>Web Development Full Stack</h3>
+                <p>Ideal para você que gosta de atuar solucionando uma grande gama de problemas tecnológicos que vão da navegação do usuário até o sistema de backoffice, dados e suas integrações.</p>
+                <a href="#" class="saibaMais">Saiba mais</a>
+                <h3>Lógica para o Futuro +18</h3>
+                <p>Feito para quem deseja se preparar para começar uma carreira em tecnologia mas não sabe por onde começar.</p>
+                <a href="#" class="saibaMais">Saiba mais</a>
+                <h3>Lógica para o Futuro +50</h3>
+                <p>Agora, se você já tem um histórico profissional e quer mudar de carreira? Esse curso foi feito especialmente para você.</p>
+                <a href="#" class="saibaMais">Saiba mais</a>
+           </section>
+<!----------- formulario de inscricao -------------->
+           <section id="form">
+               <h2>Se inscreva!</h2>
+               <form action="#">
+                    <label for="name"></label>
+                    <input type="text" id="name" required placeholder="Nome completo" size="30">
+                    <label for="email"></label>
+                    <input type="email" id="email" required placeholder="Digite seu e-mail" size="40">
+                    <label for="curso"></label>
+                    <input list="curso" required placeholder="Escolha seu curso" size="40"/>
+                        <datalist id="curso" name="curso">
+                            <option value="Web Development Full Stac"></option>
+                            <option value="Lógica para o Futuro +18"></option>
+                            <option value="Lógica para o Futuro +50"></option>
+                        </datalist>
+                    <input type="button" value="Inscrever" id="botao">
+                </form>
+           </section>
+        </div>
+<!----------- rodape -------------------->
+        <footer>
+            <img src="img/pre-logo.png" alt="Logo SoulCode" id="preLogo">
+            <ul>Patrocinador
+                <li><a href="#">TNT</a></li>
+            </ul>
+            <ul>Parceiros de Contratação
+                <li><a href="#">Niteo</a></li>
+                <li><a href="#">IT Lean</a></li>
+            </ul>
+            <ul>ONGs Parceiras
+                <li><a href="#">Cufa</a></li>
+                <li><a href="#">Casa do zezinho</a></li>
+                <li><a href="#">Gerando Falcões</a></li>
+            </ul>
+            <ul>Apoiadores
+                <li><a href="#">Brasil Digital</a></li>
+                <li><a href="#">Eu capacito</a></li>
+                <li><a href="#">Sera</a></li>
+            </ul>
+            <div id="redes">
+                <img src="img/face.jpg" alt="Facebook" class="imgRedes">
+                <img src="img/instagram.jpg" alt="Instagram" class="imgRedes">
+                <img src="img/linkedIn.jpg" alt="linkedIn" class="imgRedes">
+                <img src="img/youtube.jpg" alt="Youtube" class="imgRedes">
+            </div>
+        </footer>
+<!----------- whatsapp -------------------->
+        <img src="img/zap.png" alt="WhatsApp" id="zap">
+    </div>
+</body>
+<!--author: Bruna Mazzaron | Natália | Daniela -->
+</html>

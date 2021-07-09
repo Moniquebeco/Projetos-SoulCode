@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    font-family: arial, helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+}
+
+ul {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* aqui editamos as cores dos textos e fundo */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* aqui zeramos as margens e espaçamentos do arquivo inteiro */
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: left;
+}
+
+
+/* aqui juntamos tudo à esquerda */
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+
+
+/* aqui subimos as listas */
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+
+/* aqui subimos as sub listas */
+
+.menu li a:hover {
+    background: gray;
+    color: #fff;
+    text-shadow: 0px 0px 5px black;
+}
+
+
+/* aqui sombreei os botões quando o mause esta em cima*/
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+
+
+/* aqui esconde as sublistas no seu botão(item da lista) referente*/
+
+.menu li:hover ul,
+.menu li:hover ul {
+    display: block;
+}
+
+
+/* aqui apareci com as sublistas quando o mause estiver em cima */
+
+.menu li ul li li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+
+/* aqui alinhei na vertical minha sub lista quando o mause esta posicionado */

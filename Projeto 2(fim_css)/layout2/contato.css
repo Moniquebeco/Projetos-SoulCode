@@ -1,0 +1,183 @@
+/* para zerar espaçamento de margim e padding dos browzers */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradiente de fundo do site */
+body{
+    background-image: linear-gradient(to bottom, white, rgb(167, 233, 238));
+}
+
+/* base do site */
+#site{
+    color: rgb(77, 72, 10);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* cabeçalho */
+header{
+    grid-column: 1/-1;
+    background-image:linear-gradient(rgb(8, 221, 186), rgb(8, 173, 165), rgb(3, 110, 110));
+    box-shadow: 3px 3px 7px rgb(48, 47, 47);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+header img{
+    padding: 15px 0px 0px 60px;
+    width: 10%;
+}
+
+/* menu */
+#menu{
+    display: flex;
+    float: left;
+    color: white;
+    list-style: none;
+}
+#menu li{
+    padding-left: 60px;
+}
+#menu li a{
+    color: white;
+    text-decoration: none;
+}
+#menu li a:hover{
+    color: rgb(182, 226, 240);
+}
+
+/* campo pesquisa */
+#pesquisa input{
+    float:right;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 7px;
+}
+#pesquisa button{
+    float: right;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 1rem;
+}
+
+/* Titilo da pagina */
+h1{
+    clear: both;
+    grid-column: 1/-1;
+    margin: 70px 0px 50px 0px;
+    text-align: center;
+}
+
+/* section de endereco e telefone */
+#endTel{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, 1fr);
+    height: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#endereco{
+    grid-column: 1/2;
+}
+#endereco img{
+    height: 60px;
+}
+#textEnd{
+    grid-column: 1/2;
+}
+#telefone{
+    grid-column: 2/4;
+}
+#telefone img{
+    height: 60px;
+}
+#textTel{
+    grid-column: 2/4;
+}
+
+/* subtitulos da pagina */
+h2, h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* formulario */
+#formulario{
+    background-color: rgb(248, 239, 221);
+    text-align: center;
+}
+#formulario button{
+    background-color: rgb(9, 131, 153);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#formulario input, textarea{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+#mapaForm{
+    background-color: rgb(248, 239, 221);
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, 1fr);
+    height: 460px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#textform{
+    font-size: 22px;
+}
+
+/* rodapé */
+footer{
+    background-color: rgb(2, 41, 42);
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    grid-column: 1/-1;
+}
+#preLogo{
+    padding-left: 50px;
+}
+footer ul{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+footer a{
+    color: wheat;
+    font-size: 16px;
+    text-decoration: none;
+}
+#redes{
+    padding-left: 70px;
+}
+.imgRedes{
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 5px;
+    padding-top: 20px;
+    width: 50px;
+}
+
+/* WhatsApp */
+#zap{
+    border-radius: 100px;
+    left: 79rem;
+    top: 26rem;
+    position: fixed;
+    width: 80px;
+}

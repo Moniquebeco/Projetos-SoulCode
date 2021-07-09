@@ -1,0 +1,101 @@
+/* div's */
+#vazia {
+    height: 144px;
+}
+#divicao {
+    width: 100px;
+}
+/* !fim div's */
+/* Whatsapp */
+#whatsapp{
+    border-radius: 100px;
+    left: 74rem;
+    top: 35rem;
+    position: fixed;
+    width: 80px;
+}
+#whatsapp_svg{
+    display: inline-block;
+}
+
+/* !fim Whatsapp */
+/* rodapé */
+footer {
+    height: 100px;
+    color: white;
+    background-color: rgba(5, 33, 70);
+    text-align: center;
+}
+
+/* !fim rodapé */
+/* cabeçalho */
+header{
+    background-color: rgba(5, 33, 70, 0.97);
+}
+
+@media (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+}
+.mr-n1 {
+    margin-right: -4rem !important;
+}
+/* !fim cabeçalho */
+/* Barra de pesquisa */
+
+@media (max-width: 1300px) {
+    #busca {
+        position:relative;
+        top: 20px;
+        left: -10px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .carousel-indicators {
+        bottom: 14px;
+    }
+    .mr-n1 {
+        margin-right: -4.5rem !important;
+    }
+    .ml-n5{
+        margin-left: 20px !important;
+    }
+}
+@media (max-width: 800px){
+    #logo {
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    #vazia {
+        height: 139px;
+    }
+}
+
+/* ! fim Barra de pesquisa */
+/* links */
+/* * a svg:hover{
+    color: #086669 !important;
+} */
+* a:hover{
+    color: #00f5fd !important;
+}
+* a{
+    color: aliceblue !important;
+}
+/* !links */
+/* fontes */
+*{
+    font-family: 'Kameron', serif;
+}
+#txt1{
+    font-family: 'Michroma', sans-serif;
+}
+/*! fontes */

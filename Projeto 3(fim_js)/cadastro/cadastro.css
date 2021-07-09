@@ -1,0 +1,126 @@
+/* configurações gerais */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:#E8E8DB;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    margin: 3rem auto 0 auto;
+}
+
+/* header */
+
+header{
+    background-image: linear-gradient(to right, #8f8f8f, rgb(87, 82, 82) 60%, #575654);
+    display: flex;
+    height: 100px;
+    margin-top: 0;
+    width: 100%;
+    font-size:1.5rem;
+}
+
+.menu{
+    /* padding-right: 0; */
+    text-align: right;
+    margin: 1.5rem 1rem 0 10rem;
+    }
+
+.menu li{
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.menu li a{
+    color: #3cb4c4;
+    text-decoration: none;
+}
+
+#meuLogo{
+    width: 5.5rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.8rem;
+    margin-left: 5rem;
+}
+
+#nomeAgencia{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bb8b07;
+    text-shadow: 0.08rem 0.08rem 0.08rem black;
+    position: relative;
+    top: 1.8rem;
+    left: 2.5rem;
+}
+
+/* footer */
+.icone{
+    width: 3.1rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+footer{
+    background-image: linear-gradient(to right, #8f8f8f, rgb(87, 82, 82) 60%, #575654);
+    height: 100px;
+    display: flex;
+    margin-top: 3rem;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto-footer{
+    padding-top: 35px;
+    padding-left: 110px;
+    width: 70%;
+}
+.redes{
+    width: 30%;
+    text-align: center;
+    margin: 0.4rem 0 0 5.8rem;
+    display: flex;
+}
+
+.formulario{
+    text-align: center;
+	border-style: double;
+    margin: 0 100px;
+}
+
+h1{
+    margin: 20px;
+}
+
+hr{
+    opacity: 0;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: 400;
+}
+
+label{
+    font-size: 25px;
+}
+input{
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+}
+input[type=radio] {
+    width: 15px;
+    height: 15px;
+}

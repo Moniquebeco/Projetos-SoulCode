@@ -1,0 +1,173 @@
+/* div's */
+#vazia {
+    height: 180px;
+}
+#divicao {
+    width: 100px;
+}
+/* !fim div's */
+/* Whatsapp */
+#whatsapp_svg{
+    display: none;
+}
+#whatsapp{
+    border-radius: 100px;
+    left: 74rem;
+    top: 35rem;
+    position: fixed;
+    width: 80px;
+}
+
+@media (min-width: 1300px) {
+    #whatsapp{
+        border-radius: 100px;
+        left: 78rem;
+        top: 35rem;
+        position: fixed;
+        width: 80px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #whatsapp{
+        display: none;
+    }
+    #whatsapp_svg{
+        display: inline-block;
+    }
+}
+/* !fim Whatsapp */
+/* rodapé */
+footer {
+    height: 100px;
+    color: white;
+    background-color: rgba(5, 33, 70);
+    text-align: center;
+}
+/* !fim rodapé */
+/* cabeçalho */
+header{
+    background-color: rgba(5, 33, 70, 0.97);
+}
+#busca {
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+#banner{
+    background: url(../img/banner3\(opacity\).jpg) no-repeat;
+    background-size: cover;
+    color: black;
+    text-shadow: 4px 4px 13px rgb(255, 255, 255);
+}
+
+/* !fim cabeçalho */
+/* Barra de pesquisa */
+@media (max-width: 1300px) {
+    #busca {
+        position:relative;
+        top: 20px;
+        left: -30px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    #btn_topo{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #busca {
+        display: none;
+    }
+    .carousel-indicators {
+        bottom: 14px;
+    }
+}
+
+@media (max-width: 1289px) {
+    #busca {
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    #logo {
+        display: none;
+    }
+    #vazia2{
+        display: none;
+    }
+    #some{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    #vazia {
+        height: 112px;
+    }
+}
+.mr-n1 {
+    margin-right: -2.5rem !important;
+}
+
+/* ! fim Barra de pesquisa */
+/* estilizando os indicadores do carrossel bootstrap */
+.carousel-item {
+    height: max-content;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 6px;
+}
+.carousel-indicators {
+    bottom: -40px;
+
+}
+/* !fim estilizando os indicadores do carrossel bootstrap */
+/* links */
+/* * a svg:hover{
+    color: #086669 !important;
+} */
+* a:hover{
+    color: #00f5fd !important;
+}
+* a{
+    color: aliceblue !important;
+}
+
+* a #banner:hover{
+    background-color: black !important;
+}
+* a #banner{
+    color: aliceblue !important;
+}
+
+/* !links */
+/* fontes */
+*{
+    font-family: 'Kameron', serif;
+}
+#txt1{
+    font-family: 'Michroma', sans-serif;
+}
+/*! fontes */
+/* Cards */
+.card-body{
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 3px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999,
+    6px 6px 0px #999;
+}
+/* !fim cards */
+/* scroll */
+#btn_topo{
+    width: 100px;
+    position: relative;
+    left: 1230px;
+    bottom: 300px;
+}

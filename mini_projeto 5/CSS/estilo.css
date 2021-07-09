@@ -1,0 +1,228 @@
+ul{
+    list-style: disc;
+}
+
+body{
+    margin: 0 auto;
+    height: 800px;
+}
+/*--CABECALHO--*/
+header{
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-image: linear-gradient(to left, black 40%,#057483 80%);
+} 
+/*--BOXES DO MAIN--*/
+/*--Container--*/
+#container{
+    width: 100%;
+    height:700px;
+    background-color: #057483;
+    display: flex;
+}
+/*-- Direita e Esquerda--*/
+/*--somente determina o tamanho das 2 esquerda e direita*/
+    #esquerda,#direita{
+    width:25%;
+    height: 700px;
+ 
+}
+#esquerda{
+    background-color: #057483;   
+    color: black;
+    font-size: 20px;
+    line-height: 2;
+}
+h2{
+    text-align:center;
+    width: 70%;
+    font-size: 30px;
+  
+}
+#quem{
+    text-align: right;
+    width: 100%;
+}
+#somos{
+    text-align: left;
+    width: 100%;
+}
+#titulotnt{
+    float:right ;
+}
+#direita{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 20px;
+    line-height: 2;
+    
+}
+/*-- Meio--*/
+#meio{
+    width: 50%;
+    height: 700px;
+    background-color: rgb(241, 241, 245);
+ 
+}
+.meiodomeio1{
+    width: 48%;
+    height: 700px;
+    background-color:#057483;
+    float: left;
+    padding: 3px;
+    border: groove;
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 1;
+    
+}
+.meiodomeio2{
+    width: 48%;
+    height: 697px;
+    background-color: rgb(14, 13, 13);
+    float: left;
+    padding: 4.5px;
+    border: groove rgb(48, 44, 44);
+    color: blanchedalmond;
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 1;
+}
+
+#quem{
+    float: right;
+}
+#somos{
+    float: left;
+}
+/*--Rodape--*/
+.rodape{
+    clear:both;
+    width:100%;
+    height:max-content;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    border:none;
+    background-image: linear-gradient(to left, black 45%,#057483 80%);
+    margin-bottom:0;
+}
+#inicio{
+    width:100px;
+    height:100px;
+    color: white;
+    font-size:17px;
+    border: none;
+    margin-right: 70px;
+}
+
+#faleconosco{
+    width:100px;
+    height:100px;
+    color: white;
+    font-size:17px;
+    border: none;
+    margin-left: 70px;
+}
+
+.a2{
+text-decoration: none;
+font-size:16px;
+text-transform: uppercase;
+}
+.a2:hover{
+    font-size:18px;
+}
+/* Links */
+a{
+    float: right;
+    margin: 8px;
+    text-decoration:none;
+    color: #d80035;
+    font-size: 23px;
+    font-weight: bolder;
+    margin:8px;
+}
+
+.a2{
+    color: white;
+    width: max-content;
+}
+
+a:hover{
+    color: white;
+    font-size: 24px;
+}
+/* fim Links */
+
+/* Paragrafos */
+.p_text{
+    min-height: 172px;
+height: 162px;
+margin: 8px 2px -10px 3px;
+}
+.p_titulo{
+    min-height: 40px;
+
+    height: max-content;
+    margin: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.p_aside{
+    position: relative;
+    top: 15px;
+    margin: 17px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#titulo{
+    position: relative;
+    top: 30px;
+    margin: 0;
+    width: 80%;
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 3px ;
+    font-size: 35px;
+    font-weight: 600;
+} 
+
+/*--IMAGENS--*/
+ #imagemlogo{
+     width: 9.7rem;
+        position: fixed;
+        bottom: 25px;
+        left: 55px;
+        z-index: 10;
+ }
+ #imagemlogotnt{
+    width:10%;
+    position: fixed;
+    bottom: 25px;
+    right: 55px;
+    z-index: 10;
+  
+}
+#latinha{
+    width: 25%;
+    height: 100px;
+    position: relative;
+    bottom:250px;
+    left: 20px;
+    
+}
+#equipesoulcode{
+    width: 80%;
+    height: auto;
+    position: relative;
+    top:5px;
+    border:groove rgb(204, 204, 83);
+}
+#podevir{
+    position: absolute;
+    width: 20%;
+    clip: rect(100px,250px,200px,0);
+}

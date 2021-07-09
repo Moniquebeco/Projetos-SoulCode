@@ -1,0 +1,111 @@
+/* gradiente no fundo */
+body{
+    background-image: linear-gradient(lightgreen , lightcoral);
+}
+
+/* bordas en todas as divs */
+div{
+    border: 1px solid black;
+}
+
+/* definindo o tamanho do cabeçalho */
+#header{
+    width: 100%;
+    height: 11rem;
+}
+
+/* definindo o tamanho do rodapé e limpando o float */
+#footer{
+    clear: both;
+    width: 100%;
+    height: 7rem;
+}
+
+/* alinhando texto e flutuando  */
+#div1{
+    height: 49rem;
+    float: left;
+    width: 18rem;
+    padding: 0px 4px 4px 4px;
+    text-align: center;
+}
+
+/* tirando as 'bolinhas' dos itens da lista da esquerda */
+#ul1{
+    list-style: none;
+}
+
+/* defindo o tamanho, espaçamento interno e flutuando para a esquerda e colando com a div1 */
+#div2{
+    height: 49rem;
+    float: left;
+    width: 42.9rem;
+    padding: 0px 4px 4px 4px;
+}
+
+/* defindo o tamanho, espaçamento interno e flutuando para a esquerda e colando com a div2 */
+#div3{
+    height: 49rem;
+    float: left;
+    width: 20rem;
+    padding: 0px 4px 4px 4px;
+}
+
+/* tirando o sublinhado dos links */
+a{
+    text-decoration: none;
+}
+
+/* alinhando o texto ao centro */
+.a1{
+    text-align: center;
+}
+
+/* definindo valores ao hover dos links da esquerda */
+.a1:hover{
+    color: white;
+    font-size: 30px;
+}
+
+/* definindo valores ao hover dos links da direita */
+.a2:hover{
+    color: rgb(255, 254, 254);
+    font-size: 25px;
+}
+
+/* posicionando o formulario */
+form{
+    position: relative;
+    top: 30px;
+    right: 10px;
+    float: right;
+}
+
+/* posicionando o h1 */
+h1{
+    padding-left: 19px;
+}
+
+/* posicionando o h4 */
+h4{
+    padding-left: 25px;
+}
+
+/*  posicionando o paragrafo do footer  */
+#pfooter{
+    text-align: center;
+}
+
+/* posicionando o a imagem principal */
+img{
+    float: left;
+    width: 300px;
+    margin: 4px;
+}
+
+/* formatando as imagens do sidebar esquerdo*/
+.img_ctg{
+    width: 200px;
+    height: 150px;
+    margin: 0;
+}

@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 96%;
+    margin: 0 auto;
+    border: 1px solid;
+
+}
+
+p{
+    width: 97%;
+    margin: 0 auto;
+}
+/*   FONTES 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'RocknRoll One', sans-serif;
+*/
+
+/* HEADER */
+header{
+    background-image: radial-gradient(gray , rgb(1, 1, 17));
+    height: 30pc;
+}
+h1{
+    color: aliceblue;
+    font-size: 50px;
+    margin: 30px;
+    position: sticky;
+}
+
+h3{
+    text-align: center;
+}
+#text_h2{
+    margin: 35px;
+}
+/* Estilizando o menu */
+#b_menu{
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    width: 98%;
+    border: 10px solid rgba(128, 128, 128, 0.445);
+    border-radius: 20px;
+}
+#menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    border-radius: 20px;
+    border: 4px groove gray;
+}
+ul{
+    margin-left: 180px;
+    display: flex;
+    list-style: none;
+}
+li{
+    margin-top: 80px;
+    margin-right: 70px;
+}
+
+li a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+
+}
+
+li a:hover{
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+    background-color: rgba(10, 6, 6, 0.342);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header div p{
+    color: rgb(156, 156, 156);
+}
+
+input{
+    margin-top: 80px;
+    opacity: 0.88;
+}
+/*fim HEADER */
+
+
+/* MAIN */
+main{
+    background-image: radial-gradient(rgb(255, 255, 255) , rgb(171, 171, 173));
+    height: 40pc;
+}
+
+/* Seção de 3 colunas*/
+#grid{
+    border: 1px solid ;
+    display: grid;
+    grid-template-columns: repeat(3 ,2fr);
+}
+
+#grid div p{
+    margin: 12px;
+}
+
+#grid img{
+    float: left;
+    margin: 10px;
+}
+
+#grid p{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Seção de 2 colunas*/
+
+#grid2{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#grid2 h3{
+    text-align: center;
+}
+
+#grid2 p{
+    text-align: center;
+    font-weight: 580;
+}
+
+#grid2 div p{
+    font-weight: 100;
+}
+
+.btn{
+    color: rgb(1, 46, 46);
+    position: relative;
+        left: 300px;
+        top: 25px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+    background-color: rgb(178, 248, 225);
+    padding: 10px;
+}
+
+.btn:hover{
+    color: rgb(1, 46, 46);
+    position: relative;
+        left: 300px;
+        top: 25px;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: rgb(178, 248, 225);
+    padding: 13px;
+}
+/* fim MAIN */
+
+/* FOOTER */
+footer{
+    background-color: gray;
+    height: 10pc;
+}
+.redes_icons{
+    width: 120px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 9px;
+    float: right;
+    box-shadow: 2px 2px 4px ;
+
+}
+footer div{
+    margin: 0;
+    padding: 0;
+}
+footer p{
+    text-shadow: 2px 2px 4px black;
+    max-width: max-content;
+}
+
+/* fim FOOTER */
+
+
+/* Estilizando o hr */
+hr{
+    
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 7px auto;
+}
+
+#div_vazia{
+    height: 3pc;
+}
+

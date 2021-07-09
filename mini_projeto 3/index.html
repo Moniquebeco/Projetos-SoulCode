@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca SoulCode</title>
+    <!-- Marilía -->
+    <style>
+        .cabecalho{
+            height: 150px;
+            background-image: url("imagens/livros.jpg");
+            text-align: center;
+            vertical-align: middle;
+        }
+        .titulo-principal{
+            font-size: 100px;
+            color: white;
+            text-shadow: 5px 5px rgb(73, 23, 23);
+            padding-top: 17.5px;
+        }
+        nav{
+            background-color: rgb(73, 23, 23);
+        }
+        .menu{
+            list-style:none;
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 2px solid rgb(73, 23, 23);
+            padding-left: 0;
+        }
+        .menu li{
+            display: inline-block;
+        }
+        .menu li a{
+            color:white; 
+            text-decoration:none;
+            font-size: 30px;
+            padding: 5px 30px; 
+            display:block;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .menu li a:hover{
+            background:#fff;
+            color:rgb(73, 23, 23);
+            -moz-box-shadow:0 3px 10px 0 #CCC;
+            -webkit-box-shadow:0 3px 10px 0 #ccc;
+            text-shadow:0px 0px 5px #fff;
+        }
+        main{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 45px;
+        }
+        h2{
+            text-decoration: underline;
+            font-size: 40px;
+
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            text-indent: 20px; 
+        }
+        #sucessos{
+            text-transform: capitalize;
+            font-style: oblique;
+            background-color: rgb(73, 23, 23);
+            border-radius: 20px;
+            padding: 10px 0;
+            color: white;
+        }
+        td{
+            width: 25%;
+        }
+        img{
+            width: 100%;
+        }
+        address{
+            line-height: 2;
+        }
+        iframe{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        footer{
+            background-color: rgb(73, 23, 23);
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 25px;
+            word-spacing: 10px;
+        }
+    </style>
+        <!--Deve haver uma página principal contendo links para as demais, além de imagens e textos;
+        Deve haver, pelo menos, um menu para páginas que contenham categorias de filmes e séries;
+        Fazer no mínimo 2, e no máximo 4 categorias;
+        Cada categoria deve ter sua própria página, contendo pelo menos 2 filmes/séries; -->
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="titulo-principal">Biblioteca SoulCode</div>
+        </div>
+    <nav>
+        <ul class="menu">
+           <li><a href="index.html">Início</a></li>
+           <li><a href="biografia.html">Biografia</a></li>
+           <li><a href="fantasia.html">Fantasia</a></li>
+           <li><a href="ficcao-cientifica.html">Ficção Científica</a></li>
+           <li><a href="romance.html">Romance</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h1>Bem-vindo ao site da Biblioteca SoulCode</h1>
+        <section>
+            <h2>Quem somos?</h2>
+            <p>A história da Biblioteca SoulCode começou no ano de 2012, na zona leste da cidade de São Paulo, quando três amigos se uniram para colocar em prática o ideal de emprestar livros. Ao longo do tempo, a biblioteca de cresceu e se modernizou, mas mantém até hoje o atendimento cuidadoso e a grande variedade de títulos, desde a fundação.</p>
+            <p>No bairro do Itaim, a Biblioteca SoulCode chegou dois anos depois, hoje uma importante referência do mercado nacional de bibliotecas.</p>
+            <p>Em seus 1000 m², com acervo de aproximadamente 120 mil títulos, entre nacionais e importados, e ambiente moderno e aconchegante, ela oferece o atendimento atencioso, ágil e personalizado de uma excelente equipe de profissionais.
+            </p>
+            <p>O mesmo atendimento competente e diferenciado e mais de 800 mil títulos estão à disposição, pela internet, no site www.soulcodebiblioteca.com.br.
+            </p>
+            <p>Para mais informações, contate o nosso serviço de atendimento ao cliente: atendimento@soulcodebiblioteca.com.br</p>
+        </section>
+        <section id="sucessos">
+            <h2>Maiores sucessos da semana</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.google.com/search?q=Rita+Lee:+Uma+autobiografia&newwindow=1&sxsrf=ALeKk012JjB-qKm4LY92oym6P8M1L7MY1g:1616527046059&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjxkebCkMfvAhWNHbkGHaLnBlwQ_AUoAXoECAEQAw&biw=1048&bih=858" target="_blank"><img src="imagens/rita.jfif" alt="Livro Rita Lee"/></a></td>
+                        <td><a href="https://www.google.com/search?q=O+Senhor+dos+Anéis:+A+Sociedade+do+Anel+(Volume+1)&client=opera&hs=hWV&sxsrf=ALeKk02Uadk8mZMYCJzNWfv57id0zpjJiw:1616527239247&source=lnms&tbm=shop&sa=X&ved=2ahUKEwi4lPWekcfvAhX6JrkGHbp4DlIQ_AUoAXoECAMQAw&biw=1326&bih=627" target="_blank"><img src="imagens/imagem_a-sociedade-do-anel.jpg" alt="Livro Senhor dos Anéis"/></a></td>
+                        <td><a target="_blanck" href="https://www.google.com/search?q=jogos+vorazes+livros&biw=1366&bih=657&tbm=shop&sxsrf=ALeKk00eeiDf1ovvp8z-1BrXYX3I-u-0wA%3A1616527415678&ei=N0BaYJz-KMjF5OUPiImfgA8&oq=jogos+vorazes+livros&gs_lcp=Cgtwcm9kdWN0cy1jYxADMggIABCxAxCDATICCAAyAggAMgIIADIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDoECCMQJ1DhGVjhGWDQHGgAcAB4AIABcogB4wGSAQMwLjKYAQCgAQHAAQE&sclient=products-cc&ved=0ahUKEwjc9YXzkcfvAhXIIrkGHYjEB_AQ4dUDCAs&uact=5" target="_blank"><img src="imagens/JogosVorazes.jpg" alt="Livro Jogos Vorazes" /></a></td>
+                        <td><a href="https://www.google.com.br/search?q=comprar+livro+como+eu+era+antes+de+voc%C3%AA&sxsrf=ALeKk00v0d2l0DycHvPKXvYbBGPnAN_4hw:1616527398676&source=lnms&tbm=shop&sa=X&ved=2ahUKEwj2_vfqkcfvAhX_ILkGHe5oDYAQ_AUoAXoECAEQAw&biw=1294&bih=608" target="_blank"><img src="imagens/imagem_comoeueraantesdevoce.jpg" alt="Livro Como eu Era Antes de Você"/></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Onde estamos?</h2>
+            <address>
+                <b>Telefone:</b> (11) 4810-3644 <br />
+                <b>E-mail: </b>atendimento@soulcodebiblioteca.com.br<br />
+                <b>Endereço:</b> R. Helena, 235 - Vila Olímpia, São Paulo - SP <br /><b>CEP:</b> 04552-050
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14625.209466516426!2d-46.68633!3d-23.5934866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x32bbd06ffc892321!2sSoul%20Code%20Academy!5e0!3m2!1spt-BR!2sbr!4v1616529193510!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>&copy; Biblioteca SoulCode 2021</footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* div's */
+#vazia {
+    height: 144px;
+}
+#divicao {
+    width: 100px;
+}
+/* !fim div's */
+/* Whatsapp */
+#whatsapp{
+    border-radius: 100px;
+    left: 74rem;
+    top: 35rem;
+    position: fixed;
+    width: 80px;
+}
+#whatsapp_svg{
+    display: inline-block;
+}
+
+/* !fim Whatsapp */
+/* rodapé */
+footer {
+    height: 100px;
+    color: white;
+    background-color: rgba(5, 33, 70);
+    padding: 10px;
+    text-align: center;
+}
+
+footer div p a {
+    color: white;
+    text-decoration: none;
+}
+/* !fim rodapé */
+/* cabeçalho */
+header{
+    background-color: rgba(5, 33, 70, 0.97);
+}
+
+@media (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+}
+.mr-n1 {
+    margin-right: -4rem !important;
+}
+/* !fim cabeçalho */
+/* Barra de pesquisa */
+
+@media (max-width: 1300px) {
+    #busca {
+        position:relative;
+        top: 20px;
+        left: -10px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .carousel-indicators {
+        bottom: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mr-n1 {
+        margin-right: -4.5rem !important;
+    }
+    .ml-n5{
+        margin-left: 20px !important;
+    }
+}
+@media (max-width: 800px){
+    #logo {
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    #vazia {
+        height: 139px;
+    }
+}
+
+/* ! fim Barra de pesquisa */
+/* links */
+/* * a svg:hover{
+    color: #086669 !important;
+} */
+* a:hover{
+    color: #00f5fd !important;
+}
+* a{
+    color: aliceblue !important;
+}
+/* !links */
+/* fontes */
+*{
+    font-family: 'Kameron', serif;
+}
+#txt1{
+    font-family: 'Michroma', sans-serif;
+}
+/*! fontes */
+/* Cards */
+.card-body{
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 3px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999,
+    6px 6px 0px #999;
+}
+/* !fim cards */
+h4{
+    color: #4e9da0;
+}

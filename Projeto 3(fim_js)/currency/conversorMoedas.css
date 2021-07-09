@@ -1,0 +1,262 @@
+/* configurações gerais */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* cor de fundo */
+body{
+    background-color: #E8E8DB;
+}
+
+/* configurações do conteúdo principal da página */
+main{
+    background-color: #ffffff8f;
+    width: 70rem;
+    height: 35rem;
+    margin: 3rem auto 0 auto;
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+/* configurações do título */
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 0 1rem 4.7rem;
+    background-color: #050505f5;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 0.08rem 0.08rem 0.08rem black;
+    letter-spacing: 0.25rem;
+    border-bottom: 0.4rem solid #bb8b07;
+    text-transform: uppercase;
+}
+
+/* criação de grid com 3 colunas */
+#conversor{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+    grid-template-rows: 5.8rem;
+}
+
+/* coluna do meio vale 2 linhas */
+#conversor div:nth-of-type(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* configuração dos inputs */
+#inputValor1, #inputValor2{
+    width: 20rem;
+    height: 2.5rem;
+    display: block;
+    margin: 0.3rem auto 0 auto; 
+    box-sizing: border-box;
+    padding: 0.5rem; 
+    color: #070707;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Configuração dos títulos de cada label */
+#labelValor1, #labelValor2, #labelminhaMoedaLocal, #labelminhaMoedaPretendida{
+    display: block;
+    margin: 0 0 0 4.51rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #070707;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0.08rem 0.08rem 0.03rem rgba(0, 0, 0, 0.383);
+}
+
+/* configuração da imagem de conversão de moedas */
+img{
+    width: 4.5rem;
+    display: block;
+    margin: 1rem auto 0 auto;
+    cursor: pointer;
+}
+
+/* configuração do botão de calcular */
+button{
+    width: 9rem;
+    height: 2.5rem;
+    background-image: linear-gradient(#0a0808, #4b4a48);
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.644);
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin: 2.2rem auto 0 auto;
+    border-radius: 2rem;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    outline:none;
+    padding: 0.6rem;
+}
+
+/* configração do tamanho da caixa de entrada de moedas*/
+#moedaPretendida, #moedaLocal{
+    width: 20rem;
+    height: 2.5rem;
+    display: block;
+    margin: 0.3rem auto 0 auto;
+}
+
+/* cursor não clicável em cima do montante de resultado */
+#inputValor2{
+    cursor: not-allowed;
+}
+
+/* Adiciona flexbox em toda a div de informações extras */
+#infos{
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    width: 60.9rem;
+    height: 12.5rem;
+    margin: 2rem auto 0 auto;
+    background-color: rgba(182, 176, 176, 0.349);
+    display: flex;
+}
+
+/* div das bandeiras */
+#bandeiras{
+    width: 11.8rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.8rem;
+}
+
+/* configura cada espaço de bandeira */
+#bandeira1, #bandeira2{
+    width: 3.4rem;
+    height: 3.3rem;
+    background: url(img/estados-unidos-da-america.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+/* configura a seta */
+#seta{
+    width: 3rem;
+    height: 2.4rem;
+    background: url(img/seta-preta-para-a-direita.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0.5rem;
+}
+
+/* div de informações extras sobre a moeda desejada */
+#infosMoeda{
+    box-sizing: border-box;
+    width: 22rem;
+    height: 12rem;
+    padding: 1rem 1rem;
+    margin-left: 1rem;
+}
+
+/* configurações nternas da div de informações extras sobre a moeda desejada */
+#conversao1, #conversao2{
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #070707;
+    text-shadow: 0.08rem 0.08rem 0.02rem rgba(0, 0, 0, 0.383);
+}
+
+/* Adiciona um padding na data */
+#data{
+    padding-top: 2.8rem;
+}
+
+/* configurações das imagens de gráfico */
+#grafico{
+    width: 19rem;
+    height: 10rem;
+    margin: 1.2rem 0 0 2.1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header */
+
+header{
+    background-image: linear-gradient(to right, #8f8f8f, rgb(87, 82, 82) 60%, #575654);
+    display: flex;
+    height: 100px;
+    margin-top: 0;
+    width: 100%;
+    font-size:1.5rem;
+}
+
+.menu{
+    padding-left: 0;
+    text-align: center;
+    margin: 1rem 5rem 0 0;
+}
+
+.menu li{
+    display: inline-block;
+    list-style: none;
+   /* font-size: 30px;*/
+    font-weight: bold;
+    padding: 15px;
+}
+.menu li a{
+    color: #3cb4c4;
+    text-decoration: none;
+}
+
+#meuLogo{
+    width: 5.5rem;
+    margin-bottom: 0.7rem;
+    margin-left: 5rem
+}
+
+#nomeAgencia{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bb8b07;
+    text-shadow: 0.08rem 0.08rem 0.08rem black;
+    position: relative;
+    top: 1.8rem;
+    right: 3.5rem;
+}
+
+/* footer */
+.icone{
+    width: 3.1rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+footer{
+    background-image: linear-gradient(to right, #8f8f8f, rgb(87, 82, 82) 60%, #575654);
+    height: 100px;
+    display: flex;
+    margin-top: 3rem;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto-footer{
+    padding-top: 35px;
+    padding-left: 110px;
+    width: 70%;
+}
+.redes{
+    width: 30%;
+    text-align: center;
+    margin: 0.4rem 0 0 5.8rem;
+    display: flex;
+}
+
+

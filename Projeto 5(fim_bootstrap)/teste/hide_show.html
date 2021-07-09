@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        //1. Use o seletor correto para esconder todos os elementos <p>
+        function p() {
+            $("img").hide();
+        }
+        function p2() {
+            $("img").show();
+        }
+
+        // function p3() {
+        //     $("img").hide();
+        // }
+        // function p4() {
+        //     $("img").show();
+        // }
+
+        //OU (feito pela prof°)
+        // $(document).ready(function(){
+        //     $("p").hide();
+        // });
+
+            
+        
+
+    </script>
+</head>
+<body>
+    <div>
+        <p>
+            <img src="../img/icon.png" alt="" style="display: none;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eaque ipsam, dolor quibusdam doloremque
+        </p>
+        <p> 
+            <img src="../img/icon.png" alt="" style="display: none;">
+            quidem ipsa cumque animi deleniti est tempora, id unde! Error nesciunt, excepturi alias accusantium dicta explicabo?
+        </p>
+    </div>
+    <button onclick="p()">Esconder</button>
+    <button onclick="p2()">Mostrar</button>
+</body>
+</html>

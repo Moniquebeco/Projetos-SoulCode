@@ -1,0 +1,190 @@
+/* para zerar espaçamento de margim e padding dos browzers */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Cor de fundo do site */
+body{
+    background-color: rgb(226, 245, 241) 
+}
+
+
+/* base do site */
+#site{
+    color: rgb(77, 72, 10);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* cabeçalho */
+header{
+    grid-column: 1/-1;
+    background-image:linear-gradient(rgb(8, 221, 186), rgb(8, 173, 165), rgb(3, 110, 110));
+    box-shadow: 3px 3px 7px rgb(48, 47, 47);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+header img{
+    padding: 15px 0px 0px 60px;
+    width: 10%;
+}
+
+/* menu */
+#menu{
+    display: flex;
+    float: left;
+    color: white;
+    list-style: none;
+}
+#menu li{
+    padding-left: 60px;
+}
+#menu li a{
+    color: white;
+    text-decoration: none;
+}
+#menu li a:hover{
+    color: rgb(182, 226, 240);
+}
+
+/* campo pesquisa */
+#pesquisa input{
+    float:right;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 7px;
+}
+#pesquisa button{
+    float: right;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 1rem;
+}
+
+/* base do conteudo */
+#conteudo{
+    display:grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr;
+    height: 800px;
+}
+
+/* banner */
+#banner2{
+    margin-top: 70px;
+    position: relative;
+    width: 750px;
+}
+
+/* titulo do site */
+h1{
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 2px 2px 5px rgb(53, 53, 53);
+    font-size: 35px;
+    position: absolute;
+    text-shadow: 2px 2px 7px rgb(231, 226, 226);
+    padding-left: 30px;
+    top: 140px;
+    width:30%;
+    z-index: 2;
+}
+
+/*Informações comum entre os cursos */
+#sobreCursos{
+    grid-column: 3/6;
+}
+#sobreCursos h2{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding: 20px 0px 10px 55px;
+    text-align: center;
+    text-decoration: underline overline;
+}
+#sobreCursos h3{
+    color:rgb(53, 50, 6);
+    font-size: 23px;
+    padding: 15px 15px 10px 45px;
+}
+#sobreCursos p{
+    font-size: 23px;
+    padding: 0px 45px 10px 45px;
+
+}
+.saibaMais{
+    color: rgb(117, 117, 18);
+    font-size: 20px;
+    padding-left: 45px;
+}
+
+/* Formulario */
+#form{
+    background-color: rgb(191, 227, 241);
+    grid-column: 1/5;
+    height: 150px;
+    padding-left: 50px;
+}
+#form h2{
+    color:rgb(77, 72, 10);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+#form input{
+    padding: 10px;
+}
+#botao{
+    background-color: rgb(9, 131, 153);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* rodapé */
+footer{
+    background-color: rgb(2, 41, 42);
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    grid-column: 1/-1;
+}
+#preLogo{
+    padding-left: 50px;
+}
+footer ul{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+footer a{
+    color: wheat;
+    font-size: 16px;
+    text-decoration: none;
+}
+#redes{
+    padding-left: 70px;
+}
+.imgRedes{
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 5px;
+    padding-top: 20px;
+    width: 50px;
+}
+
+/* WhatsApp */
+#zap{
+    border-radius: 100px;
+    left: 79rem;
+    top: 26rem;
+    position: fixed;
+    width: 80px;
+}
